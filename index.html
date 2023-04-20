@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Games Review</title>
+    <link rel="icon" href="images/logo-sm.png">
+</head>
+
+<body id="bodyOverflow">
+    <div id="loadPage" class="loadPage ">
+        <div class="center">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+    <div class="primary-container">
+        <div id="myCards" class="main-background">
+            <div class="myNav-container position-relative">
+                <nav class="navbar navbar-expand-lg w-75 position-absolute z-3 rounded-5">
+                    <div class="container">
+                        <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                            <img src="images/logo-sm.png" class="w-25" alt="page-logo">
+                            <p class="m-0 text-white">GAME REVIEWS</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link text-white active" aria-current="page"
+                                        href="#">MMORPG</a></li>
+                                <li class="nav-item"><a class="nav-link text-white active" href="#">SHOOTER</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">SAILING</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">PERMADEATH</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">SUPERHERO</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">PIXEL</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="myCards-container">
+                <div class="container">
+                    <div id="cardRow" class="row">
+                        <!-- Filled with JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myDetails" class="myDetails-container text-white d-none">
+            <div class="container">
+                <div class="row pt-4">
+                    <div class="col-9">
+                        <h2 class="m-0 p-0">Game Details</h2>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-center">
+                        <i id="xmarkClose" class="fa-solid fa-xmark fs-4"></i>
+                    </div>
+                </div>
+                <div id="detailsCon" class="row py-4">
+                    <!-- Filled with JS -->
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/app.js" type="module"></script>
+
+</body>
+
+</html>

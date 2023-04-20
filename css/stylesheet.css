@@ -1,0 +1,177 @@
+/* *** *** Global CSS *** *** */
+:root {
+    --main-color: #272b30;
+    --nav-bg-color: rgb(58, 73, 123);
+    --black-color: #000000;
+    --crd-border-color: rgba(126, 126, 126, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* *** *** ********** *** *** */
+
+.primary-container .main-background {
+    min-height: 100vh;
+    background-color: var(--main-color);
+}
+
+.primary-container .main-background .navbar {
+    background-color: white;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--nav-bg-color) !important;
+    box-shadow: 0px 0px 50px var(--black-color);
+}
+
+.primary-container .main-background .myNav-container {
+    min-height: 40vh;
+    background-image: url(../images/myNav-background.png);
+}
+
+.primary-container .main-background .myCards-container {
+    margin-top: 150px !important;
+}
+
+.primary-container .main-background .myCards-container .inner-crd {
+    border: 01px solid var(--crd-border-color) !important;
+    filter: grayscale(.6);
+    transition: .4s ease;
+}
+
+.primary-container .main-background .myCards-container .inner-crd:hover {
+    filter: grayscale(0);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.primary-container .main-background .myCards-container .inner-crd .crd-content p {
+    font-size: 14px !important;
+}
+
+.primary-container .main-background .myCards-container .inner-crd .content {
+    height: 100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-container .main-background .myCards-container .inner-crd hr {
+    color: var(--crd-border-color) !important;
+    opacity: 1 !important;
+    margin: 10px 0px !important;
+}
+
+.primary-container .main-background .myCards-container .inner-crd .crd-btn-1 {
+    border: 0px;
+    border-radius: 4px;
+    padding: 6px 6px !important;
+    font-size: 12px !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white !important;
+}
+
+.primary-container .main-background .myCards-container .inner-crd .crd-btn-2,
+.primary-container .main-background .myCards-container .inner-crd .crd-btn-3 {
+    border: 0px;
+    border-radius: 4px;
+    padding: 2px 6px !important;
+    font-size: 12px !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white !important;
+}
+
+.primary-container .myDetails-container {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 9999 !important;
+    background-color: var(--main-color);
+}
+
+.primary-container .myDetails-container .dBtn span {
+    border: 0px;
+    border-radius: 10px;
+    padding: 2px 6px !important;
+    font-size: 12px !important;
+    background-color: #0DCAF0;
+    color: black !important;
+}
+
+.primary-container .myDetails-container .spacing {
+    line-height: 30px;
+}
+
+.fa-xmark {
+    cursor: pointer;
+}
+
+/* *** loadingPage *** */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, #0DCAF0, #ffffff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+@keyframes wave {
+    0% {transform: scale(0);}
+    50% {transform: scale(1);}
+    100% {transform: scale(0);}
+}
